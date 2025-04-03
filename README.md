@@ -6,6 +6,7 @@ def sieve_of_eratosthenes(limit):
         if primes[num]:
             for multiple in range(num * num, limit + 1, num):
                 primes[multiple] = False
+                
     
     return [num for num, is_prime in enumerate(primes) if is_prime]
 
